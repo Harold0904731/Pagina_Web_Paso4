@@ -1,0 +1,91 @@
+.Menu{
+	position: absolute !important;
+	margin-top: 1%;
+	right: 0;
+}
+.Menu ul{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 8px;
+	
+}
+.Menu li{
+	background:#055075;
+	display: inline-block;
+	border-radius: 10px;
+	position: relative;
+	
+}
+.Menu li a{
+	background: #055075;
+	display: block;
+	min-width: 140px;
+	min-height: 50px;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 10px;
+	
+}
+.Menu li:hover a{
+	background: #3ea6cd;
+	transition: background 1s;
+
+}
+.Menu li:hover ul a{
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+.Menu li:hover ul a:hover{
+	background: #3ea6cd;
+	color: #fff;
+	transition: background 1s;
+}
+.Menu li ul {
+	display: none;
+	position: absolute;
+	min-width: 10px;
+	width: 150px;
+    border-radius: 12px;
+    padding: 5px;
+    left: 0px;
+    margin-top: 3px;
+    background: rgba(5,80,117,0.7);
+}
+.Menu ul li a:hover + .sublista, .sublista:hover{
+	display: block;
+}
+
+.Menu li:hover > ul{
+	display: block;
+	float: none;
+}
+.Menu li ul li {
+	display: block;
+	float: none;
+	margin-top:4px;
+}
+
+
+
+/*estilo responsive*/
+@media screen and (max-width:735px ){
+	.Menu ul{
+		position: static;
+		display: none;
+	}
+	.Menu li{
+		margin-bottom: 1px;
+	}
+	.Menu ul li, li a{
+		width: 100%;
+	}
+	.Menu .mostrar-menu{
+		display: block;
+	}
+}
