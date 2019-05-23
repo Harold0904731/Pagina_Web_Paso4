@@ -1,7 +1,10 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="_Default" %>
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <script src="Js/jquery.js" type="text/javascript"></script>
     <script src="Js/bootstrap.js" type="text/javascript"></script>
     <script src="Js/bootstrap.min.js" type="text/javascript"></script>
@@ -13,7 +16,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LOGIN</title>
 </head>
+    
 <body class="imgFondo">
+    <form id="form1" runat="server">
     <!--Esta es la sección para el Inicio-->
     <div class="container row col-lg-12">
         <div class="col-lg-12 row subcontainer">
@@ -21,19 +26,22 @@
                 <div class="col-lg-6 row content_Login">
                     <div class="col-lg-12">
                             <label>Usuario:</label>
-                            <input type="text" class="form-control" name="CUsuario" id="CUsuario" placeholder="Ingrese Su Usuario"/>
+                            <br />
+                            <asp:TextBox ID="txtusuario" class="form-control" runat="server" placeholder="Ingrese Su Usuario" ForeColor="Black"></asp:TextBox>
                     </div>
                     <div class="col-lg-12">
                             <label>Contraseña:</label><br>
-                            <input type="password" class="form-control" name="CContrasena" id="CContrasena" placeholder="Ingrese Su Contraseña"/>
+                            <asp:TextBox ID="txtcontraseña" class="form-control" runat="server" ForeColor="Black" TextMode="Password" placeholder="Ingrese Su Contraseña"></asp:TextBox>
                     </div>
                     <div class="col-lg-12 centrarText">
-                            <input type="button" class="btn btn-primary" name="Ingreso" id="Ingreso" onclick="window.location.href = 'Info.html'" value="Ingresar"><br>
-                            <a href="RegistroUsuario.html">Registrate</a><br>    
+                            <asp:Button ID="btnEnviarLoguin" class="btn btn-primary" runat="server"  ForeColor="White" Text="Ingresar" />
+                            <br>
+                            <a href="RegistroUsuario.aspx">Registrate</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>    
+    </form>
 </body>
 </html>

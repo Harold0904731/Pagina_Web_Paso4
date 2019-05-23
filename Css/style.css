@@ -10,7 +10,7 @@
 	
 }
 .content_Login{
-    height: 350px;
+    height: 280px;
 	box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
 	background: rgba(255,255,255,0.82);
     margin-left: 30% !important;
@@ -19,10 +19,18 @@
     padding: 15px;
 
 }
-.content_Registro{
-    height: 500px;
-	box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
-	background: rgba(255,255,255,0.82);
+.content_Pregunta {
+    box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
+    background: rgba(255,255,255,0.82);
+    /*margin-left: 30% !important;*/
+    border-radius: 4px;
+    margin-top: 2%;
+    padding: 15px;
+}
+.content_Registro {
+    height: 615px;
+    box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
+    background: rgba(255,255,255,0.82);
     margin-left: 30% !important;
     border-radius: 4px;
     margin-top: 5%;
@@ -31,7 +39,8 @@
 .content_Login label, a, .content_Registro label, a{
 	color: #000;
 	font-weight: 700;
-}
+    width: 977px;
+    }
 .centrarText{
 	text-align: center;
 }
