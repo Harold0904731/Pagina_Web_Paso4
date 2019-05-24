@@ -55,10 +55,10 @@
                  </div>
                 <div class="col-lg-4">
                     <div class="card">
-                        <img src="images/Tema%201.jpg" class="card-img-top" alt="...">
+                        <img src="images/Tema%203.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Tema 1</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Scratch</h5>
+                            <p class="card-text">Scratch es un lenguaje de programación visual desarrollado por el Grupo Lifelong Kindergarten del MIT Media Lab.Su principal característica consiste en que permite ...</p>
                             <asp:Button ID="Button2" class="btn btn-primary" runat="server"  ForeColor="White" Text="Ingresa Aqui" />
                         </div>
                     </div>
