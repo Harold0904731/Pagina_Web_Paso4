@@ -37,7 +37,7 @@
                             <asp:Button ID="btnEnviarLoguin" class="btn btn-primary" runat="server"  ForeColor="White" Text="Ingresar" />
                             <br>
                             <a href="RegistroUsuario.aspx">Registrate</a><br />
-                            <a href="index.aspx">Ingreso Facil</a>
+                            <a href="Cursos.aspx">Ingreso Facil</a>
                     </div>
                 </div>
             </div>
